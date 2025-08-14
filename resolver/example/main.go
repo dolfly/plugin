@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/go-gost/plugin/resolver/proto"
+	"github.com/dolfly/plugin/resolver/proto"
 	"google.golang.org/grpc"
 )
 

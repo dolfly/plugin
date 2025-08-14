@@ -4,7 +4,7 @@
 
 syntax = "proto3";
 package proto;
-option go_package = "github.com/go-gost/plugin/admission/proto";
+option go_package = "github.com/dolfly/plugin/admission/proto";
 
 message AdmissionRequest {
 	string addr = 1;

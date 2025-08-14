@@ -1,4 +1,4 @@
-module github.com/go-gost/plugin
+module github.com/dolfly/plugin
 
 go 1.21
 

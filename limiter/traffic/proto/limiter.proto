@@ -4,7 +4,7 @@
 
 syntax = "proto3";
 package proto;
-option go_package = "github.com/go-gost/plugin/limiter/traffic/proto";
+option go_package = "github.com/dolfly/plugin/limiter/traffic/proto";
 
 message LimitRequest {
 	string network = 1;

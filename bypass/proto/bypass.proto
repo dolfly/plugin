@@ -4,7 +4,7 @@
 
 syntax = "proto3";
 package proto;
-option go_package = "github.com/go-gost/plugin/bypass/proto";
+option go_package = "github.com/dolfly/plugin/bypass/proto";
 
 message BypassRequest {
 	string addr = 1;

@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/go-gost/plugin/limiter/traffic/proto"
+	"github.com/dolfly/plugin/limiter/traffic/proto"
 	"google.golang.org/grpc"
 )
 

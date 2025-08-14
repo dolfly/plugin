@@ -9,7 +9,7 @@ import (
 	"net"
 	"sync/atomic"
 
-	"github.com/go-gost/plugin/hop/proto"
+	"github.com/dolfly/plugin/hop/proto"
 	"github.com/go-gost/x/config"
 	"google.golang.org/grpc"
 )

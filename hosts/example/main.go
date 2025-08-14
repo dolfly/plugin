@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/go-gost/plugin/hosts/proto"
+	"github.com/dolfly/plugin/hosts/proto"
 	"google.golang.org/grpc"
 )
 
