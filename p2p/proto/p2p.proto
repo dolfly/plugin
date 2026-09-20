@@ -39,8 +39,17 @@ message Chunk {
 
 message StatusRequest {}
 
+// Gauges describe the current path per peer; counters are cumulative since
+// start. punch_attempts rising with punch_success flat distinguishes "punched
+// and failed" from "punching never applied here".
 message StatusReply {
-	int32 tunnels = 1; // future path/status fields are added here
+	int32 tunnels        = 1; // active inbound tunnels held by this host
+	int32 direct_peers   = 2; // gauge: peers with a live direct session
+	int32 derp_peers     = 3; // gauge: peers on relay only (no live direct)
+	int64 punch_attempts = 4; // counter
+	int64 punch_success  = 5; // counter: attempts that reached direct
+	int64 streams_direct = 6; // counter
+	int64 streams_derp   = 7; // counter
 }
 
 service P2P {
