@@ -50,6 +50,8 @@ message StatusReply {
 	int64 punch_success  = 5; // counter: attempts that reached direct
 	int64 streams_direct = 6; // counter
 	int64 streams_derp   = 7; // counter
+	int32 encrypted_peers = 8; // gauge: connected peers with an encrypted session
+	int32 plaintext_peers = 9; // gauge: connected peers without one
 }
 
 service P2P {
